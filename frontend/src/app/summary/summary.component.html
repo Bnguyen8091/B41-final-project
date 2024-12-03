@@ -1,0 +1,30 @@
+<div class="summary-container">
+  <!-- Page Title -->
+  <h1 class="page-title">Charlotte Profile - Fall 2023</h1>
+
+  <!-- Chart Section -->
+  <div class="chart-section">
+    <canvas
+      baseChart
+      [data]="barChartData"
+      [type]="barChartType"
+      [options]="barChartOptions">
+    </canvas>
+  </div>
+
+  <!-- Description Section -->
+  <div class="description-section">
+    <p>
+      Today, our modern University and thriving city create opportunities for 49ers to enact change throughout our region.
+      At Charlotte, we’re proud to drive progress in our region, grow as individuals, and shape the future as the next
+      generation of leaders.
+    </p>
+  </div>
+
+  <!-- Explore Admissions Button -->
+  <div class="button-section">
+    <button class="navigate-button" (click)="navigateToAdmissions()">
+      Explore Admissions
+    </button>
+  </div>
+</div>
