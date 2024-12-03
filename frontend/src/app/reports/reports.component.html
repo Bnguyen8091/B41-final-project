@@ -1,0 +1,51 @@
+<div style="padding: 20px; font-family: Arial, sans-serif; color: #333;">
+  <!-- Title Section -->
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h1 style="font-size: 2.5rem; color: #4CAF50;">Reports</h1>
+    <p style="font-size: 1.2rem; color: #555;">Explore the data and help us make a difference!</p>
+  </div>
+
+  <!-- Chart Section -->
+  <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 40px;">
+    <div style="width: 60%; max-width: 600px;">
+      <canvas baseChart
+        [data]="pieChartData"
+        [type]="pieChartType"
+        [options]="{
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'top',
+              labels: {
+                color: '#333',
+                font: { size: 14 }
+              }
+            }
+          }
+        }">
+      </canvas>
+    </div>
+  </div>
+
+  <!-- Donate Section -->
+  <div style="text-align: center; margin-top: 20px;">
+    <p style="font-size: 1.1rem; margin-bottom: 15px;">
+      Together, we can make a bigger impact. Your support matters!
+    </p>
+    <a href="https://giving.charlotte.edu" target="_blank" style="text-decoration: none;">
+      <button style="
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+        Donate Now
+      </button>
+    </a>
+  </div>
+</div>
