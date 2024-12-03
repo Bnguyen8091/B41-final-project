@@ -1,0 +1,26 @@
+<div class="dashboard-container">
+  <h1>Welcome to the UNCC NEWS!</h1>
+
+  <div class="navigation-buttons">
+    <button (click)="navigateTo('summary')">View Summary</button>
+    <button (click)="navigateTo('reports')">View Reports</button>
+  </div>
+
+  <h2>Latest News</h2>
+  <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+  <div class="news-container">
+    <div class="news-card" *ngFor="let article of newsArticles">
+      <img [src]="article.imageUrl" alt="{{ article.title }}" />
+      <div class="news-content">
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.summary }}</p>
+        <a [href]="article.link" target="_blank">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="read-more-container">
+    <button class="read-more-button" (click)="openReadMore()">Read More News</button>
+  </div>
+</div>
