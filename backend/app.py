@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 # Allow CORS for specified origins
 CORS(app, resources={r"/api/*": {"origins": [
     "http://localhost:4200",
-    "https://6ce5a35da1a0.ngrok.app"
+    "https://938b6a36ff29.ngrok.app"
 ]}}, supports_credentials=True)
 
 # Temporary in-memory storage for news data
