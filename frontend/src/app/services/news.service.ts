@@ -23,7 +23,7 @@ export class NewsService {
 
   // Dynamically determine backend URL
   private getBackendUrl(): string {
-    const ngrokUrl = 'https://6ce5a35da1a0.ngrok.app/api';
+    const ngrokUrl = 'https://938b6a36ff29.ngrok.app/api';
     const localhostUrl = 'http://localhost:3000/api';
 
     // Use ngrok if the app is served from ngrok; otherwise, use localhost
